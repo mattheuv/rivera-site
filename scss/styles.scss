@@ -1,0 +1,76 @@
+/* Librerías */
+
+@import "lib/variables";
+
+// Componentes
+
+@import "componentes/slideshow";
+
+/* Layouts */
+
+@import "layout/footer";
+@import "layout/header";
+@import "layout/descargas";
+
+// main {
+//     padding-top:60px;
+// }
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+.btn-outline-primary,
+.list-group-item.active{
+    background: $color-brand;
+    color: white;
+    border: none;
+    &:hover {
+        background: $color-darkgray;
+    }
+}
+
+#map {
+    height: 60%;
+    border-bottom: 5px solid $color-brand;
+  }
+  /* Optional: Makes the sample page fill the window. */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mapa-franja {
+      width: 100%;
+      height: 35px;
+      background-color: $color-lightgray;
+      & div {
+
+          height: 35px;
+          border-bottom: 4px solid $color-brand;
+      }
+  }
+
+#footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+.centro-mantenimiento {
+    background-color: $color-brand;
+    color: white;
+    text-align: center;
+    padding-top:2em;
+    padding-bottom:2em;
+    margin-bottom: 2em;
+    .list-group-item {
+        background-color: transparentize($color: #000000, $amount: 0.8);
+        border-radius: 0;
+        color: #fff;
+        }
+}

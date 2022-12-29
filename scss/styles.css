@@ -1,0 +1,252 @@
+@charset "UTF-8";
+/* Librerías */
+/* Gama de colores principales */
+/* tamaños de fuente // llamar con map-get($variable, nombre-tamaño) */
+/* Tipos de fuente */
+#slideshow {
+  position: relative;
+}
+
+#slideshow .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+#slideshow .overlay h1 {
+  color: #fe9718;
+}
+
+#slideshow .overlay .container, #slideshow .overlay .row {
+  height: 100%;
+}
+
+/* Layouts */
+.footer {
+  background: #4D4D4D;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer__alt {
+  background-color: #e47e01;
+  color: white;
+  font-size: .9em;
+}
+
+.footer__menu {
+  text-align: center;
+}
+
+.footer__logo {
+  width: 285px;
+  padding-top: .3em;
+}
+
+.footer__logo figure {
+  width: 285px;
+  height: 1.5em;
+  margin: 0;
+  background: url("/assets/images/logo-autopro.png") no-repeat center;
+  background-size: contain;
+}
+
+@media (max-width: 600px) {
+  .footer__logo {
+    padding-top: 0;
+  }
+  .footer__logo figure {
+    margin-left: 1.2em;
+  }
+}
+
+.header__logo figure {
+  width: 180px;
+  height: 1.7em;
+  margin: 0;
+  background: url("/assets/images/logo-autopro.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.bg-dark {
+  background-color: #fe9718 !important;
+}
+
+.go-back a {
+  color: #fe9718;
+  text-decoration: none;
+}
+
+.go-back a:hover {
+  color: white;
+  border-bottom: 1.5px solid white;
+}
+
+.all-files {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.folder-tittle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background: #eaeaea;
+  height: 3em;
+  margin-bottom: 2em;
+}
+
+.folder-tittle h1 {
+  margin-left: 2em;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.folder-tittle h1 i {
+  margin-right: .5em;
+  font-size: .7em;
+}
+
+.folder-tittle p {
+  margin-right: 3em;
+}
+
+.file-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 2em;
+}
+
+.file {
+  border: 1px solid #fea231;
+  border-radius: 1em;
+  padding: 0 20px 20px 20px;
+}
+
+.file:hover {
+  background-color: #fffced;
+}
+
+.file button {
+  background-color: #fe9718;
+  color: white;
+  border: 0;
+  width: 100%;
+  height: 2.8em;
+  text-transform: uppercase;
+}
+
+.file button:hover {
+  background: #e47e01;
+}
+
+.file .file-tittle {
+  width: 100%;
+  height: 2em;
+  margin-top: 1em;
+  background-color: #e6e6e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.file h4 {
+  margin: 0;
+  margin-left: 1em;
+  margin-top: .3em;
+}
+
+.file i {
+  margin-right: 1em;
+  margin-top: .3em;
+}
+
+.go-back-mobile {
+  display: none;
+}
+
+.public-folder-mobile {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn-outline-primary,
+.list-group-item.active {
+  background: #fe9718;
+  color: white;
+  border: none;
+}
+
+.btn-outline-primary:hover,
+.list-group-item.active:hover {
+  background: #4D4D4D;
+}
+
+#map {
+  height: 100%;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.mapa-franja {
+  width: 100%;
+  height: 35px;
+  background-color: #e6e6e6;
+}
+
+.mapa-franja div {
+  height: 35px;
+  border-bottom: 4px solid #fe9718;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.centro-mantenimiento {
+  background-color: #fe9718;
+  color: white;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+.centro-mantenimiento .list-group-item {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  color: #fff;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,103 @@
+.go-back a{
+    color:$color-brand;
+    text-decoration: none;
+}
+
+.go-back a:hover{
+    color:white;
+    border-bottom:1.5px solid white;
+}
+
+.all-files{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.folder-tittle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background:#eaeaea;
+    height: 3em;
+    margin-bottom: 2em;
+}
+
+.folder-tittle h1{
+    margin-left: 2em;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.folder-tittle h1 i{
+    margin-right: .5em;
+    font-size: .7em;
+
+}
+
+.folder-tittle p{
+    margin-right: 3em;
+}
+
+.file-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 2em;
+}
+
+.file{
+   
+    border: 1px solid lighten($color-brand, 5%);
+    border-radius: 1em;
+    padding:0 20px 20px 20px;
+}
+
+.file:hover{
+
+    background-color: #fffced;
+}
+
+.file button{
+    background-color: $color-brand;
+    color: white;
+    border: 0;
+    width: 100%;
+    height: 2.8em;
+    text-transform: uppercase;
+}
+
+.file button:hover{
+    
+    background: $color-brand-alt;
+}
+
+.file .file-tittle {
+    width: 100%;
+    height: 2em;
+    margin-top: 1em;
+    background-color: $color-lightgray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.file h4{
+    margin:0;
+    margin-left: 1em;
+    margin-top: .3em;
+}
+
+.file i{
+    margin-right: 1em;
+    margin-top: .3em;
+}
+
+.go-back-mobile{
+    display: none;
+}
+
+.public-folder-mobile{
+    display: none;
+}
+

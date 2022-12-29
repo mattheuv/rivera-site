@@ -1,0 +1,25 @@
+/* Gama de colores principales */
+
+$color-brand:rgb(254, 151, 24);
+$color-brand-alt:rgb(228, 126, 1);
+$color-brand-dark:rgb(182, 100, 0);
+$color-white: #fff;
+
+$color-gray: #A7A9AC;
+$color-darkgray: #4D4D4D;
+$color-lightgray:lighten($color-darkgray, 60%);
+
+/* tamaños de fuente // llamar con map-get($variable, nombre-tamaño) */
+
+$fs : (
+    big: 24px,
+    normal: 16px,
+    small: 14px,
+    x-small: 12px
+);
+
+$font-space: .1em;
+
+/* Tipos de fuente */
+
+$font-fam-base: 'Lato', sans-serif;

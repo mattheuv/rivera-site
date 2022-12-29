@@ -1,0 +1,18 @@
+.header{
+    &__logo {
+        & figure {
+        width: 180px;
+        height: 1.7em;
+        margin: 0;
+        background: url('/assets/images/logo-autopro.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        }
+}
+}
+
+.bg-dark {
+    background-color: $color-brand !important;
+} 
+

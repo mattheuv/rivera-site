@@ -1,0 +1,37 @@
+.footer {
+    background:$color-darkgray;
+
+    & a {
+        color: white;
+    }
+    &__alt {
+        background-color: $color-brand-alt;
+        color: white;
+        font-size: .9em;
+    }
+
+    &__menu {
+        text-align: center;
+    }
+    &__logo {
+        width: 285px;
+        padding-top: .3em;
+        & figure {
+        width: 285px;
+        height: 1.5em;
+        margin: 0;
+        background: url('/assets/images/logo-autopro.png') no-repeat center;
+        background-size: contain;
+        }
+    }
+
+}
+
+@media (max-width: 600px) {
+    .footer__logo{
+        padding-top: 0;
+        & figure {
+            margin-left: 1.2em;
+        }
+    }
+}
